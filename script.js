@@ -65,7 +65,7 @@ const ramos = [
   {nombre:"Inglés B2+", prereq:["Inglés B2-"]}
 ];
 
-// --- COLORES POR SEMESTRE ---
+// --- COLORES PASTELES (ROSADOS Y MORADOS) POR SEMESTRE ---
 const colores = [
   "#f3d1f4", // pastel rosado
   "#e5d4f6", // pastel lila
@@ -77,14 +77,14 @@ const colores = [
   "#ead7f6"  // pastel morado
 ];
 
-
 // --- CARGAR Y GUARDAR PROGRESO ---
 const aprobados = new Set(JSON.parse(localStorage.getItem("aprobadosRamos") || "[]"));
+
 function guardarProgreso() {
   localStorage.setItem("aprobadosRamos", JSON.stringify([...aprobados]));
 }
 
-// --- RENDERIZADO ---
+// --- RENDERIZADO DE LA MALLA ---
 const mallaDiv = document.getElementById("malla");
 
 function render() {
@@ -106,12 +106,17 @@ function render() {
 
     const div = document.createElement("div");
     div.className = "ramo";
+
+    // Estado bloqueado si no tiene todos los prerrequisitos aprobados
     if (!ramo.prereq.every(pr => aprobados.has(pr))) {
       div.classList.add("bloqueado");
     }
+
+    // Estado aprobado si ya está en el set
     if (aprobados.has(ramo.nombre)) {
       div.classList.add("aprobado");
     }
+
     div.textContent = ramo.nombre;
 
     div.addEventListener("click", () => {
@@ -129,4 +134,6 @@ function render() {
     semestreDiv.appendChild(div);
   });
 }
+
+// --- INICIALIZAR ---
 render();
