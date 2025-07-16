@@ -67,9 +67,16 @@ const ramos = [
 
 // --- COLORES POR SEMESTRE ---
 const colores = [
-  "#007bff", "#17a2b8", "#28a745", "#ffc107",
-  "#fd7e14", "#6f42c1", "#e83e8c", "#20c997"
+  "#f3d1f4", // pastel rosado
+  "#e5d4f6", // pastel lila
+  "#f9e0f7", // rosado más claro
+  "#e6d7f7", // lila grisáceo
+  "#f6d8e7", // rosa suave
+  "#e8d9f4", // lila suave
+  "#f5e2f7", // rosado lavanda
+  "#ead7f6"  // pastel morado
 ];
+
 
 // --- CARGAR Y GUARDAR PROGRESO ---
 const aprobados = new Set(JSON.parse(localStorage.getItem("aprobadosRamos") || "[]"));
