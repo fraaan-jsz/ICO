@@ -56,13 +56,7 @@ const ramos = [
   {nombre:"Finanzas Corporativas", prereq:["Finanzas"]},
   {nombre:"Proyecto de Análisis de Datos", prereq:["Estrategia de Visualización de Datos"]},
   {nombre:"Inglés B1+", prereq:["Inglés B1-"]},
-  {nombre:"CELE 5", prereq:[]},
-
-  // SEMESTRE 7
-  {nombre:"Inglés B2-", prereq:["Inglés B1+"]},
-
-  // SEMESTRE 8
-  {nombre:"Inglés B2+", prereq:["Inglés B2-"]}
+  {nombre:"CELE 5", prereq:[]}
 ];
 
 // --- COLORES PASTELES (ROSADOS Y MORADOS) POR SEMESTRE ---
