@@ -30,8 +30,8 @@ const ramos = [
   {nombre:"Inglés A2+", prereq:["Inglés A2-"]},
 
   // SEMESTRE 4
-  {nombre:"Derecho y Empresa", prereq:["Introducción al Management"]},
   {nombre:"Marketing I", prereq:["Introducción al Management","Inglés A2-"]},
+  {nombre:"Derecho y Empresa", prereq:["Introducción al Management"]},
   {nombre:"Ética de los Negocios", prereq:["Introducción al Management"]},
   {nombre:"Emprender con Impacto", prereq:["Introducción al Management"]},
   {nombre:"Herramientas para el Análisis de Datos", prereq:["Probabilidades e Inferencia"]},
