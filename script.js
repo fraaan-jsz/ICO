@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // --- BORRAR PROGRESO DE VERSIONES ANTERIORES (RESET AUTOMÁTICO) ---
-  localStorage.removeItem("aprobadosRamos");
+  // --- CARGAR PROGRESO (YA NO SE BORRA AL RECARGAR) ---
+  const aprobados = new Set(JSON.parse(localStorage.getItem("aprobadosRamos") || "[]"));
 
   // --- RAMOS AGRUPADOS POR SEMESTRE ---
   const semestres = [
@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- COLORES PASTELES ---
   const colores = ["#f3d1f4","#e5d4f6","#f9e0f7","#e6d7f7","#f6d8e7","#e8d9f4","#f5e2f7","#ead7f6"];
 
-  const aprobados = new Set();
   function guardarProgreso() {
     localStorage.setItem("aprobadosRamos", JSON.stringify([...aprobados]));
   }
