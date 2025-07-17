@@ -1,6 +1,6 @@
 // --- CONFIGURACIÓN DE RAMOS Y PRERREQUISITOS ---
 const ramos = [
-  // SEMESTRE 1
+  {  // SEMESTRE 1
   {nombre:"Pensamiento y Actualidad Económica", prereq:[]},
   {nombre:"Introducción a la Economía", prereq:[]},
   {nombre:"Álgebra", prereq:[]},
@@ -8,9 +8,9 @@ const ramos = [
   {nombre:"Comunicación Escrita", prereq:[]},
   {nombre:"Comunicación Oral", prereq:[]},
   {nombre:"Taller Mi Primer Año UDD", prereq:[]},
-  {nombre:"CELE 1", prereq:[]},
+  {nombre:"CELE 1", prereq:[]},},
 
-  // SEMESTRE 2
+  {// SEMESTRE 2
   {nombre:"Contabilidad I", prereq:[]},
   {nombre:"Cálculo", prereq:["Álgebra"]},
   {nombre:"Business Tech", prereq:[]},
@@ -18,18 +18,18 @@ const ramos = [
   {nombre:"Lectura Crítica", prereq:[]},
   {nombre:"Pensamiento Crítico", prereq:[]},
   {nombre:"CELE 2", prereq:[]},
-  {nombre:"Inglés A2-", prereq:[]},
+  {nombre:"Inglés A2-", prereq:[]},},
 
-  // SEMESTRE 3
+  {// SEMESTRE 3
   {nombre:"Comportamiento Organizacional", prereq:["Introducción al Management"]},
   {nombre:"Microeconomía", prereq:["Introducción a la Economía","Cálculo"]},
   {nombre:"Contabilidad II", prereq:["Contabilidad I"]},
   {nombre:"Desarrollo Profesional I", prereq:["Comunicación Escrita","Comunicación Oral","Taller Mi Primer Año UDD","Lectura Crítica","Pensamiento Crítico"]},
   {nombre:"Probabilidades e Inferencia", prereq:["Cálculo"]},
   {nombre:"CELE 3", prereq:[]},
-  {nombre:"Inglés A2+", prereq:["Inglés A2-"]},
+  {nombre:"Inglés A2+", prereq:["Inglés A2-"]},},
 
-  // SEMESTRE 4
+  {// SEMESTRE 4
   {nombre:"Derecho y Empresa", prereq:["Introducción al Management"]},
   {nombre:"Marketing I", prereq:["Introducción al Management","Inglés A2-"]},
   {nombre:"Ética de los Negocios", prereq:["Introducción al Management"]},
@@ -37,18 +37,18 @@ const ramos = [
   {nombre:"Herramientas para el Análisis de Datos", prereq:["Probabilidades e Inferencia"]},
   {nombre:"Métodos Estadísticos", prereq:["Probabilidades e Inferencia"]},
   {nombre:"Semana i", prereq:["Contabilidad I","Cálculo","Business Tech","Macroeconomía","Pensamiento Crítico"]},
-  {nombre:"Pasantía de Verano", prereq:[]},
+  {nombre:"Pasantía de Verano", prereq:[]},},
         
-  // SEMESTRE 5
+  {// SEMESTRE 5
   {nombre:"Organizaciones Ágiles", prereq:["Introducción al Management"]},
   {nombre:"Business Innovation Technologies", prereq:["Business Tech"]},
   {nombre:"Finanzas", prereq:["Contabilidad II"]},
   {nombre:"Competencia y Mercados", prereq:["Microeconomía"]},
   {nombre:"Estrategia de Visualización de Datos", prereq:["Herramientas para el Análisis de Datos","Métodos Estadísticos"]},
   {nombre:"CELE 4", prereq:[]},
-  {nombre:"Inglés B1-", prereq:["Inglés A2+"]},
+  {nombre:"Inglés B1-", prereq:["Inglés A2+"]},},
       
-  // SEMESTRE 6
+  { // SEMESTRE 6
   {nombre:"Estrategia", prereq:["Microeconomía","Marketing I","Finanzas","Inglés B1-"]},
   {nombre:"Marketing II", prereq:["Marketing I"]},
   {nombre:"Emprendimiento Innovador", prereq:["Emprender con Impacto"]},
@@ -56,7 +56,7 @@ const ramos = [
   {nombre:"Finanzas Corporativas", prereq:["Finanzas"]},
   {nombre:"Proyecto de Análisis de Datos", prereq:["Estrategia de Visualización de Datos"]},
   {nombre:"Inglés B1+", prereq:["Inglés B1-"]},
-  {nombre:"CELE 5", prereq:[]}
+  {nombre:"CELE 5", prereq:[]},}
 ];
 
 // --- COLORES PASTELES (ROSADOS Y MORADOS) POR SEMESTRE ---
