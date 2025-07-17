@@ -38,7 +38,7 @@ const ramos = [
   {nombre:"Métodos Estadísticos", prereq:["Probabilidades e Inferencia"]},
   {nombre:"Semana i", prereq:["Contabilidad I","Cálculo","Business Tech","Macroeconomía","Pensamiento Crítico"]},
   {nombre:"Pasantía de Verano", prereq:[]},
-
+        
   // SEMESTRE 5
   {nombre:"Organizaciones Ágiles", prereq:["Introducción al Management"]},
   {nombre:"Business Innovation Technologies", prereq:["Business Tech"]},
@@ -47,7 +47,7 @@ const ramos = [
   {nombre:"Estrategia de Visualización de Datos", prereq:["Herramientas para el Análisis de Datos","Métodos Estadísticos"]},
   {nombre:"CELE 4", prereq:[]},
   {nombre:"Inglés B1-", prereq:["Inglés A2+"]},
-
+      
   // SEMESTRE 6
   {nombre:"Estrategia", prereq:["Microeconomía","Marketing I","Finanzas","Inglés B1-"]},
   {nombre:"Marketing II", prereq:["Marketing I"]},
