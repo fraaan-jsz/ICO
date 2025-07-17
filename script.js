@@ -30,13 +30,12 @@ const ramos = [
   {nombre:"Inglés A2+", prereq:["Inglés A2-"]},
 
   // SEMESTRE 4
-  {nombre:"Marketing I", prereq:["Introducción al Management","Inglés A2-"]},
   {nombre:"Derecho y Empresa", prereq:["Introducción al Management"]},
+  {nombre:"Marketing I", prereq:["Introducción al Management","Inglés A2-"]},
   {nombre:"Ética de los Negocios", prereq:["Introducción al Management"]},
   {nombre:"Emprender con Impacto", prereq:["Introducción al Management"]},
   {nombre:"Herramientas para el Análisis de Datos", prereq:["Probabilidades e Inferencia"]},
   {nombre:"Métodos Estadísticos", prereq:["Probabilidades e Inferencia"]},
-  {nombre:"CELE 4", prereq:[]},
   {nombre:"Semana i", prereq:["Contabilidad I","Cálculo","Business Tech","Macroeconomía","Pensamiento Crítico"]},
   {nombre:"Pasantía de Verano", prereq:[]},
 
@@ -46,17 +45,18 @@ const ramos = [
   {nombre:"Finanzas", prereq:["Contabilidad II"]},
   {nombre:"Competencia y Mercados", prereq:["Microeconomía"]},
   {nombre:"Estrategia de Visualización de Datos", prereq:["Herramientas para el Análisis de Datos","Métodos Estadísticos"]},
-  {nombre:"CELE 5", prereq:[]},
+  {nombre:"CELE 4", prereq:[]},
   {nombre:"Inglés B1-", prereq:["Inglés A2+"]},
 
   // SEMESTRE 6
-  {nombre:"Estrategia", prereq:["Microeconomía","Marketing I","Finanzas"]},
+  {nombre:"Estrategia", prereq:["Microeconomía","Marketing I","Finanzas","Inglés B1-"]},
   {nombre:"Marketing II", prereq:["Marketing I"]},
   {nombre:"Emprendimiento Innovador", prereq:["Emprender con Impacto"]},
   {nombre:"Desarrollo Profesional II", prereq:["Desarrollo Profesional I"]},
   {nombre:"Finanzas Corporativas", prereq:["Finanzas"]},
   {nombre:"Proyecto de Análisis de Datos", prereq:["Estrategia de Visualización de Datos"]},
   {nombre:"Inglés B1+", prereq:["Inglés B1-"]},
+  {nombre:"CELE 5", prereq:[]},
 
   // SEMESTRE 7
   {nombre:"Inglés B2-", prereq:["Inglés B1+"]},
